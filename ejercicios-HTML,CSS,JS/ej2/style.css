@@ -1,0 +1,76 @@
+/* 1. Estilos generales de la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: black;
+}
+
+/* 2. Contenedor del input y botón */
+div {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 220px;
+}
+
+input[type="text"]:focus {
+  border-color: black;
+}
+
+/* 3. Estilo del botón Agregar */
+#btn-agregar {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+#btn-agregar:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* 4. Estilos de la lista <ul> */
+#lista-tareas {
+  list-style: none;
+  padding: 0;
+  width: 320px;
+}
+
+/* 5. Estilos de cada ítem <li> */
+#lista-tareas li {
+  background-color: white;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Efecto al pasar el mouse sobre una tarea para indicar que se puede borrar */
+#lista-tareas li:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  background-color: #ffebee;
+  color: #c62828;
+  text-decoration: line-through;
+}
